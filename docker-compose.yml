@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web_scraping:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
